@@ -14,8 +14,8 @@
 <body>
 	<div class="container">
 		<header>
-			<!-- <nav class="navbar navbar-light bg-light"> -->
-				<br>
+			<div
+				class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 				<div class="container">
 					<div class="row">
 						<div class="col-2">
@@ -26,7 +26,7 @@
 							</div>
 						</div>
 
-						<div class="col">
+						<div class="col d-none d-md-block">
 							<form method="POST" action="index.html">
 								<input type="search" required class="search">
 								<input type="submit" name="submit" value="Rechercher" class="submit">
@@ -34,14 +34,22 @@
 						</div>
 
 						<div class="col">
-							<div class="user">
-								<a href="#">Luke Chesser</a>
+							<div class="dropdown">
+								<div class="user">
+									<a class="nav-link dropdown-toggle" href="#" role="button" id="deroulanta"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Luke
+										Chesser</a>
+									<div class="dropdown-menu" aria-labelledby="deroulanta">
+										<a class="dropdown-item" href="#">Edit my profile</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<br>
-		<!--	</nav> -->
+			</div>
+			<br>
 		</header>
 
 		<br>
